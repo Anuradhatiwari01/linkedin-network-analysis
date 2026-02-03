@@ -1,36 +1,49 @@
-# LinkedIn Network Analysis 📊
+# LinkedIn Student Network Analysis (Python)
 
-This project analyzes LinkedIn connection data of a student network using **Python, Graph Theory, and Statistical Methods**.  
-The goal was to uncover **patterns, influencers, and insights** from real-world social connections.
+## What this project does
+This project analyzes LinkedIn connection data of students to understand
+how people are connected to each other in a large network.
 
----
+Each person is treated as a point, and each connection is treated as a link
+between two people.
 
-## Project Overview
-- **Dataset**: JSON files containing user degrees and adjacency lists
-- **Size**: 28,117 individuals, ~199,770 total connections
-- **Methods Used**:
-  - Data cleaning & preprocessing (duplicates, nulls, inconsistent formats)
-  - Graph construction using adjacency lists
-  - Degree distribution, average/median/mode analysis
-  - Random Walk and Pruned Path algorithms
-  - Visualization of network and influencers
+## Why I built this
+I wanted to learn how large datasets are handled and how relationships
+between people can be represented using data.
 
----
+This project helped me understand how connections grow and how some people
+are more connected than others.
 
-## Key Insights
-- **Skewed Network**: Most users had very few connections (mode = 1), while a small fraction dominated outreach.
-- **Top Influencers**: Identified super-connectors with >4,000 connections.
-- **Efficient Routes**: Pruned paths revealed short, stable, and strong connection chains.
-- **Community Patterns**: Denser sub-networks showed centralized connectivity.
+## Dataset used
+- Student LinkedIn connection data
+- Around 28,000 people and 1,99,000 connections
+- Data was provided in JSON format
 
----
+## What analysis I did
+- Cleaned the data by removing duplicates and incorrect entries
+- Built a connection structure from the raw data
+- Counted how many connections each person has
+- Studied overall connection patterns in the network
+- Followed connection chains to see how people are linked
 
-## Tech Stack
-- **Python**
-- **Pandas, NumPy**
-- **NetworkX**
-- **Matplotlib / Seaborn**
-- **Graph Theory & Statistics**
+## Key observations
+- Most students had very few connections
+- A small number of students had many connections
+- These highly connected students act as important links in the network
 
----
+## Tech used
+- Python
+- Pandas and NumPy
+- NetworkX
+- Matplotlib
 
+## What I learned
+- How to work with large datasets
+- How to represent real-world connections using data
+- How to extract simple insights from raw data
+- How to visualize data for better understanding
+
+## Future improvements
+- Add more visual summaries
+- Analyze data over time
+- Compare different student networks
